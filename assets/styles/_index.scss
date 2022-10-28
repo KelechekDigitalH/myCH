@@ -1,1 +1,58 @@
 @import './vars';
+
+.banner {
+    
+    &__inner {
+        background-image: url('../../assets/images/banner.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 607px 0 35px 0;
+    }
+    
+    &__title--subtitle {
+        text-align: center;
+    }
+
+    &__title {
+        font-family: $ff-barlow;
+        font-weight: $fw-700;
+        font-style: $fs-normal;
+        font-size: 150px;
+        text-transform: uppercase;
+
+        color: $color-white;
+    }
+
+    &__subtitle {
+        font-family: $ff-barlow;
+        font-weight: $fw-500;
+        font-style: $fs-normal;
+        font-size: 18px;
+
+        color: $color-white;
+        margin: 0 0 96px 0;
+    }
+
+    &__button {
+        padding: 0 36px;
+    }
+    
+    &__link {
+        color: $color-white;
+        background-color: $color-light-red-c3;
+
+        text-decoration: none;
+        text-align: center;
+
+        padding: 16px 0;
+        border-radius: 25px;
+
+        width: 100%;
+        display: block;
+
+        font-family: $ff-barlow;
+        font-weight: $fw-700;
+        font-style: $fs-normal;
+        font-size: 16px;
+    }
+}
