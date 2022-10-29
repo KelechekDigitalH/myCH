@@ -1,0 +1,22 @@
+@import './vars';
+
+.social-media {
+    position: fixed;
+    top: 30%;
+
+    &__inner {
+        background-color: $color-dark-red;
+        padding: 23px 0;
+        width: 57px;
+        text-align: center;
+        border-radius: 50px;
+    }
+
+    &__link {
+        display: block;
+    }
+
+    &__icon {
+        width: 44px;
+    }
+}
