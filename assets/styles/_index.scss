@@ -14,12 +14,7 @@
     }
 
     &__title {
-        font-family: $ff-barlow;
-        font-weight: $fw-700;
-        font-style: $fs-normal;
-        font-size: 150px;
-        text-transform: uppercase;
-
+        @include title;
         color: $color-white;
     }
 
