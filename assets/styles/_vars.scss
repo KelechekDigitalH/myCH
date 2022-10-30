@@ -15,3 +15,25 @@ $color-light-orange: #E08C6C;
 $color-light-orange-dd: #DD8766;
 $color-light-red-c3: #C33324;
 $color-light-blue: #B2D0D8;
+
+// Mixins
+@mixin title {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 150px;
+    color: #59061F;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+
+
+@mixin desription {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    color: #59061F;
+}
+
