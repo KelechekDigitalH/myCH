@@ -1,0 +1,73 @@
+@import './vars';
+
+    .blog-inner {
+        padding: 156px 193px 106px 193px;
+    
+        h2 {
+            @include title;
+        }
+
+        p {
+            @include desription;
+            max-width: 1510px;
+            padding: 0 0 0 7px;
+            margin: 58px 0 74px 0;
+        }
+
+        p span {
+            color:$color-light-red-c3;
+        }
+    }    
+
+
+@media (max-width: 900px) {
+   
+    .blog-inner {
+        padding: 156px 150px 106px 150px;
+        
+    }  
+     
+}
+
+@media (max-width: 768px) {
+ 
+    .blog-inner {
+        padding: 156px 125px 106px 125px;
+
+        h2 {
+            font-size: 90px;
+        }
+
+        p {
+            font-size: 35px;
+        }
+    }  
+   
+}
+
+@media (max-width: 675px) {
+ 
+    .blog-inner {
+        padding: 156px 80px 106px 80px;
+    }  
+   
+}
+
+
+@media (max-width: 478px) {
+ 
+    .blog-inner {
+        padding: 156px 60px 106px 60px;
+
+        h2 {
+            font-size: 60px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }  
+   
+}
+
+
