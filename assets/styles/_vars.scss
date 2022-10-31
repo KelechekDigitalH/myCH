@@ -34,3 +34,13 @@ $color-light-blue: #B2D0D8;
     font-size: 50px;
     color: #59061F;
 }
+
+@mixin text {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #59061F;
+}
+
+
