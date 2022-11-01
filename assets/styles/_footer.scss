@@ -9,11 +9,6 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 25px 50px 25px 50px;
-    // max-width: 135rem;
-    // padding-left: 50px;
-    // padding-right: 50px;
-    // padding-top: 25px;
-    // padding-bottom: 50px;
     margin: 0 auto; 
 
     &-icon{
@@ -32,13 +27,14 @@ footer{
         padding-left: 0;
         margin: 0;
         display: flex;
+        align-items: center;
 
         a{
             align-items:center;
             text-align: center;
             letter-spacing: 0.8px;
             font-size: 16;
-            color: #C2C2C2;
+            color: $color-light-orange-dd;
             text-decoration: none;
             font-weight: 600;
         }
@@ -58,7 +54,26 @@ footer{
             width: 39px;
             height: 39px;
             border-radius: 50px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
         } 
+        &__instagram img{
+            width: 15px;
+            height: 15px; 
+        }
+        &__facebook img{
+            width: 9px;
+            height: 17px;
+        }
+        &__youtube img{
+            width: 21px;
+            height: 15px; 
+        }
+        &__twitter img{
+            width: 18px;
+            height: 15px; 
+        }
     }
 
     &-reserved{
