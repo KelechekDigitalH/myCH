@@ -1,1 +1,72 @@
 @import './vars';
+
+.header{
+    background-color: $color-dark-red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px 25px 50px;
+    margin: 0 auto;
+    font-family: $ff-barlow;
+    &-logo{
+        &__img{
+            max-width: 173px;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 529px;
+
+    &-item {
+        margin-left: 35px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &-link {
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.8px;
+        font-weight: bold;
+        color: $color-white;
+        transition: 0.2s ease color;
+
+        &:hover {
+            color: $color-light-orange-dd;
+        }
+
+        &.active {
+            color: $color-light-orange-dd;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+    &-btn__account, &-btn__kontact{
+        cursor: pointer;
+        background: $color-light-orange;
+        border-radius: 50px; 
+        border: none;
+        display: block;
+    }
+    &-btn__account {
+        width: 50px;
+        height: 50px;
+        img{
+            width: 19px;
+        }
+    }
+    &-btn__kontact{
+        font-size: 16px;
+        font-weight: bold;
+        width: 115px;
+        height: 50px; 
+    }
+
+}
