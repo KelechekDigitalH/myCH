@@ -17,7 +17,7 @@ table .dataTable{
     color: $color-white;
     border-collapse: separate;
     border-spacing: 0;
-    padding: 0 50px 0 50px;
+    padding: 0 20px 0 20px;
     font-size: 18px;
     font-family: $ff-barlow;
     font-weight: medium;
@@ -40,7 +40,7 @@ table .dataTable{
         color: #59061F;
         font-size: 25px;
         font-weight: bold;
-        width: 477px;
+        width: 460px;
 
     }
     &__veranstaltung{
@@ -81,9 +81,8 @@ table .dataTable{
     
 }
 .dataTables_filter{
-    margin-left: 40rem;
-    // text-align: center;
-    margin-bottom: 50px;
+    margin-left: 38.1rem;
+    margin-bottom: 41px;
 
     label{
         display: none;
@@ -111,8 +110,8 @@ table .dataTable{
     //     pointer-events: none;
     //   }
     .form-control{
-        width: 270px;
-        margin: 0 20px;
+        width: 268px;
+        margin: 0 19px;
         border-radius: 26px;
         padding: 5px 0px 6px 14px;
     }
