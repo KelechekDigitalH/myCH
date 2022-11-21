@@ -121,3 +121,172 @@
         margin: 0 0 0 40px;
     }
 }
+
+@media screen and (max-width: 1440px) {
+    .banner {
+
+        &__title {
+            font-size: 100px;
+        }
+    }
+
+    .about {
+        
+        &__inner {
+            padding: 120px 300px 180px 193px;
+        }
+
+        &__title {
+            font-size: 100px;
+            line-height: 100px;
+        }
+
+        &__getty {
+            left: 0;
+            padding: 5px 80px 5px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .banner {
+
+        &__title {
+            font-size: 80px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__link {
+            font-size: 14px;
+            padding: 14px 0;
+        }
+    }
+
+    .about {
+        
+        &__inner {
+            padding: 80px 135px 80px 135px;
+        }
+
+        &__title {
+            font-size: 80px;
+            line-height: 80px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__getty {
+            left: 0;
+            padding: 5px 80px 5px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+
+        &__title {
+            font-size: 70px;
+        }
+    }
+
+    .about {
+
+        &__title {
+            font-size: 70px;
+            line-height: 65px;
+        }
+
+        &__inner {
+            padding: 45px 30px 45px 47px;
+        }
+
+        &__photo {
+            height: 195px;
+        }
+
+        &__photo-text {
+            display: block;
+            margin: 30px 0 0;
+        }
+
+        &__text {
+            margin: 20px 0 0;
+            width: auto;
+        }
+
+        &__getty {
+            padding: 0px 15px 0px 5px;
+
+            top: 143px;
+        }
+
+        &__texts-getty {
+            font-size: 12px;
+        }
+
+        &__prg {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .banner {
+
+        &__inner {
+            padding: 255px 0 35px 0;
+        }
+
+        &__title {
+            font-size: 40px;
+        }
+
+        &__subtitle {
+            font-size: 12px;
+        }
+
+        &__button {
+            padding: 0 25px;
+        }
+
+        &__link {
+            padding: 10px 0;
+        }
+    }
+
+    .about {
+
+        &__title {
+            font-size: 40px;
+            line-height: 40px;
+        }
+
+        &__inner {
+            padding: 19px 35px 20px 28px;
+        }
+
+        &__photo {
+            height: 195px;
+        }
+
+        &__getty {
+            padding: 0px 15px 0px 5px;
+
+            top: 143px;
+        }
+
+        &__texts-getty {
+            font-size: 12px;
+        }
+
+        &__prg {
+            font-size: 12px;
+        }
+    }
+}
