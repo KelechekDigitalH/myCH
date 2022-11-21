@@ -1,3 +1,133 @@
 @import './vars';
 
+.drop-down{
+    background-color: #fff;
+}
+table .dataTable{
+    width: 100%; 
+    margin: 0 auto;
+    clear: both;
+    border-collapse: separate;
+    box-sizing: content-box;
+    border-spacing: 0;
+}
 
+.table{
+    width: 100%;
+    color: $color-white;
+    border-collapse: separate;
+    border-spacing: 0;
+    padding: 0 50px 0 50px;
+    font-size: 18px;
+    font-family: $ff-barlow;
+    font-weight: medium;
+
+    thead{
+        display: none;
+    }
+    tbody {
+        tr{
+        background-color:  $color-light-blue;
+        }
+        td{
+            padding: 44px 50px;
+            box-sizing: content-box;
+            border-top: 3px solid #fff;
+        }
+    }
+    &__name{
+        letter-spacing: 0.75px;
+        color: #59061F;
+        font-size: 25px;
+        font-weight: bold;
+        width: 477px;
+
+    }
+    &__veranstaltung{
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #c33324;
+            border-radius: 50%;
+            position: absolute;
+            left: 1rem;
+            top: calc(50% - 7.9px);
+        }
+        &::before{
+            width: 5px;
+            height: 5px;
+            background-color: #C33324;
+            border-radius: 50%;
+            content: '';
+            display: block;
+            position: absolute;
+            left: 20.7px;
+            top: calc(50% - 2.9px);
+        }
+        a{
+            text-decoration: none;
+            color: #C33324;
+        }
+        
+    }
+    
+}
+.dataTables_filter{
+    margin-left: 40rem;
+    // text-align: center;
+    margin-bottom: 50px;
+
+    label{
+        display: none;
+    }
+
+    select{
+        cursor: pointer;
+        font-family: $ff-barlow;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.8px;
+        color: #DD8766;
+        text-transform: uppercase;
+        border: 2px solid #DD8766;
+        position: relative;
+    }
+    // select::after {
+    //     content: '\25BC';
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     padding: 1em;
+    //     background-color: #34495e;
+    //     transition: .25s all ease;
+    //     pointer-events: none;
+    //   }
+    .form-control{
+        width: 270px;
+        margin: 0 20px;
+        border-radius: 26px;
+        padding: 5px 0px 6px 14px;
+    }
+    // .form-control::after {
+    //     content: '\25BC';
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     padding: 1em;
+    //     background-color: #34495e;
+    //     transition: .25s all ease;
+    //     pointer-events: none;
+    //   }
+
+    #ortFilter{
+        width: 115px;
+    }
+}
