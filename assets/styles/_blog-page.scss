@@ -86,7 +86,7 @@
 
 
 .filter-btns {
-      button {
+    button {
         font-size: 16px;
         font-weight: $fw-700;
         color: $color-light-orange-dd;
@@ -94,6 +94,11 @@
         border: 1px solid $color-light-orange-dd;
         border-radius: 26px;
         margin-right: 25px;
+    }
+
+    .active-btn {
+        color:$color-dark-red;
+        background-color: $color-light-orange-dd;
     }
 }
 
