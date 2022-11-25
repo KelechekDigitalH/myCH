@@ -83,22 +83,6 @@
         height: 270px;
     }
 
-    &__getty {
-        position: absolute;
-        left: 53px;
-        top: 160px;
-
-        background-color: rgba(173, 173, 173, 0.74);
-        padding: 5px 100px 5px 20px;
-    }
-
-    &__title-getty {
-        @include text;
-        color: $color-white;
-        font-weight: $fw-700;
-        font-size: 14px;
-    }
-
     .about-img {
         font-weight: 400;
     }
@@ -122,6 +106,118 @@
     }
 }
 
+.information {
+
+    &__inner {
+        background-image: url('../../assets/images/info.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 400px;
+        position: relative;
+    }
+
+    &__overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.65);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__aktuell {
+        border: 1.5px solid;
+        border-color: $color-white;
+        border-radius: 26px;
+        color: $color-white;
+        padding: 5px 13px;
+
+        font-family: $ff-barlow;
+        font-weight: $fw-700;
+        font-size: 16px;
+        font-style: $fs-normal;
+
+        text-transform: uppercase;
+        width: max-content;
+    }
+    
+    &__all-blocks {
+        padding: 0 345px 0 338px;
+    }
+
+    &__title {
+        font-family: $ff-barlow;
+        font-weight: $fw-700;
+        font-size: 120px;
+        font-style: $fs-normal;
+
+        color: $color-white;
+        line-height: 120px;
+
+        padding: 15px 100px 74px 0;
+    }
+
+    &__prg-block {
+        max-width: 735px;
+        margin-left: auto;
+    }
+
+    &__prg {
+        font-family: $ff-barlow;
+        font-weight: $fw-500;
+        font-size: 18px;
+        font-style: $fs-normal;
+
+        color: $color-white;
+        line-height: 25px;
+        padding: 0 0 26px 0;
+    }
+
+    &__lesen {
+        font-family: $ff-barlow;
+        font-weight: $fw-700;
+        font-style: $fs-normal;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #c33324;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: calc(50% - 7.9px);
+        }
+
+        &::before{
+            width: 5px;
+            height: 5px;
+            background-color: #C33324;
+            border-radius: 50%;
+            content: '';
+            display: block;
+            position: absolute;
+            left: 5px;
+            top: calc(50% - 2.9px);
+        }
+
+        a{
+            text-decoration: none;
+            color: #C33324;
+            margin: 0 0 0 25px;
+        }
+    }
+}
+
 @media screen and (max-width: 1440px) {
     .banner {
 
@@ -139,11 +235,6 @@
         &__title {
             font-size: 100px;
             line-height: 100px;
-        }
-
-        &__getty {
-            left: 0;
-            padding: 5px 80px 5px 20px;
         }
     }
 }
@@ -179,11 +270,6 @@
         &__text {
             font-size: 16px;
         }
-
-        &__getty {
-            left: 0;
-            padding: 5px 80px 5px 20px;
-        }
     }
 }
 
@@ -218,16 +304,6 @@
         &__text {
             margin: 20px 0 0;
             width: auto;
-        }
-
-        &__getty {
-            padding: 0px 15px 0px 5px;
-
-            top: 143px;
-        }
-
-        &__texts-getty {
-            font-size: 12px;
         }
 
         &__prg {
@@ -273,16 +349,6 @@
 
         &__photo {
             height: 195px;
-        }
-
-        &__getty {
-            padding: 0px 15px 0px 5px;
-
-            top: 143px;
-        }
-
-        &__texts-getty {
-            font-size: 12px;
         }
 
         &__prg {
