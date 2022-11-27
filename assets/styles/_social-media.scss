@@ -1,0 +1,53 @@
+@import './vars';
+
+.social-media {
+    position: fixed;
+    top: 35%;
+    right: 0;
+    z-index: 99;
+
+    &__inner {
+        background-color: $color-dark-red;
+        padding: 23px 0;
+        width: 57px;
+        text-align: center;
+        border-radius: 50px;
+    }
+
+    &__link {
+        display: block;
+    }
+
+    &__icon {
+        width: 44px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .social-media {
+
+        &__inner {
+            width: 45px;
+            padding: 10px 0;
+        }
+
+        &__icon {
+            height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .social-media {
+
+        &__inner {
+            width: 35px;
+            padding: 5px 0;
+        }
+
+        &__icon {
+            height: 25px;
+            width: 25px;
+        }
+    }
+}

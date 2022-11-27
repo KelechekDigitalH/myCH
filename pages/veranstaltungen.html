@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veranstaltungen</title>
+    <link rel="stylesheet" href="../css/styles.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <a class="header-logo" href="#">
+                    <img src="../assets/images/myCH_rot.png" alt="Logo" class="header-logo__img">
+                </a>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">VERANSTALTUNGEN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ÜBER UNS</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-btn__account"><img src="../assets/images/kontact.png" alt=""></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-btn__kontact">KONTAKT</button>
+                        </li>
+                    </ul>
+                </nav>
+    
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Blog banner-txt-->
+            <section class="blog container">
+                <div class="blog-inner">
+                    <h2>VERANTSALTUNGEN</h2>
+                    <p>Ein Blog ist eine Art  
+                        <span>Tagebuch oder Journal</span>
+                        , das online auf einer Website geführt wird und in der 
+                        <span>Regel öffentlich</span> einsehbar ist.
+                    </p>  
+                </div>
+            </section>
+
+            <section class="drop-down container mt-4">
+                <div class="category-filter">
+                    <select id="categoryFilter" class="form-control">
+                      <option value="">KATEGORIE</option>
+                      <option value="Konzert">KONZERT</option>
+                      <option value="Theater">THEATER</option>
+                      <option value="Sport">SPORT</option>
+                      <option value="Freizeit & Ausflüge">FREIZEIT & AUSFLÜGE</option>
+                      <option value="Kinderveranstaltungen">KINDERVERANSTALTUNGEN</option>
+                    </select>
+                  </div>
+                  
+                  <!-- Product Group filter -->
+                  
+                  <div class="product-filter">
+                    <select id="productGroupFilter" class="form-control">
+                      <option value="">DATUM</option>
+                      <option value="10.12.2025">10.12.2022</option>
+                      <option value="10.12.2022 16.00 – 22.00 UHR">10.12.2022 16.00 – 22.00 UHR</option>
+                      <option value="10.12.2022 16.00 – 22.00 UHR">10.12.2022 16.00 – 22.00 UHR</option>
+                      <option value="10.12.2022 16.00 – 22.00 UHR">10.12.2022 16.00 – 22.00 UHR</option>
+                      <option value="10.12.2022 16.00 – 22.00 UHR">10.12.2022 16.00 – 22.00 UHR</option>
+                    </select>
+                  </div>
+
+                  <div class="ort-filter">
+                    <select class="form-control" id="ortFilter">
+                        <option value="">ORT</option>
+                        <option value="LU">LU</option>
+                        <option value="KU">KU</option>
+                        <option value="RU">RU</option>
+                        <option value="KG">KG</option>
+                        <option value="KZ">KZ</option>
+                    </select>
+                  </div>
+                <table class="table" id="filterTable">
+                    <thead>
+                      <tr>
+                        <th scope="col">Product Group</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Datum</th>
+                        <th scope="col">ORT</th>
+                        <th scope="col">Frequency</th>
+                        <th scope="col">Product Code</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="col" class="table__name">Zum Zusammenhang von kultureller Identität</td>
+                        <td scope="col">Konzert</td>
+                        <td scope="col">10.12.2025</td>
+                        <td scope="col">LU</td>
+                        <td scope="col">Bourbaki</td>
+                        <td scope="col" class="table__veranstaltung"><a href="#">ZU DER VERANSTALTUNG</a></td>
+                      </tr>
+                      <tr>
+                        <td scope="col" class="table__name">Ein Tag bei LiSA e.V.</td>
+                        <td scope="col">Freizeit & Ausflüge</td>
+                        <td scope="col">10.12.2022 <br>16.00 – 22.00 UHR</td>
+                        <td scope="col">KG</td>
+                        <td scope="col">Bourbaki</td>
+                        <td scope="col" class="table__veranstaltung"><a href="#">ZU DER VERANSTALTUNG</a></td>
+                      </tr>
+                      <tr>
+                        <td scope="col" class="table__name">Zum Zusammenhang von kultureller Identität</td>
+                        <td scope="col">Freizeit & Ausflüge</td>
+                        <td scope="col">10.12.2022 <br>16.00 – 22.00 UHR</td>
+                        <td scope="col">LU</td>
+                        <td scope="col">Bourbaki</td>
+                        <td scope="col" class="table__veranstaltung"><a href="#">ZU DER VERANSTALTUNG</a></td>
+                      </tr>
+                      <tr>
+                        <td scope="col" class="table__name">Ein Tag bei LiSA e.V.</td>
+                        <td scope="col">Konzert</td>
+                        <td scope="col">10.12.2022 <br>16.00 – 22.00 UHR</td>
+                        <td scope="col">LU</td>
+                        <td scope="col">Bourbaki</td>
+                        <td scope="col" class="table__veranstaltung"><a href="#">ZU DER VERANSTALTUNG</a></td>
+                      </tr>
+                      <tr>
+                        <td scope="col" class="table__name">Zum Zusammenhang von kultureller Identität</td>
+                        <td scope="col">Freizeit & Ausflüge</td>
+                        <td scope="col">10.12.2022 <br>16.00 – 22.00 UHR</td>
+                        <td scope="col">LU</td>
+                        <td scope="col">Bourbaki</td>
+                        <td scope="col" class="table__veranstaltung"><a href="#">ZU DER VERANSTALTUNG</a></td>
+                      </tr>
+                      <tr>
+                        <td scope="col" class="table__name">Ein Tag bei LiSA e.V.</td>
+                        <td scope="col">Konzert</td>
+                        <td scope="col">10.12.2022 <br>16.00 – 22.00 UHR</td>
+                        <td scope="col">LU</td>
+                        <td scope="col">Bourbaki</td>
+                        <td scope="col" class="table__veranstaltung"><a href="#">ZU DER VERANSTALTUNG</a></td>
+                      </tr>
+                      <tr>
+                        <td scope="col" class="table__name">Zum Zusammenhang von kultureller Identität</td>
+                        <td scope="col">Kinderveranstaltungen</td>
+                        <td scope="col">10.12.2022 <br>16.00 – 22.00 UHR</td>
+                        <td scope="col">LU</td>
+                        <td scope="col">Bourbaki</td>
+                        <td scope="col" class="table__veranstaltung"><a href="#">ZU DER VERANSTALTUNG</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </section>
+
+            
+
+            <!-- Call to action-->
+            <section class="call-to-action container">
+                <div class="call-to-action-inner">
+                    <h2>MÖCHTEST <span>DU</span> EINE <span>VERANSTALTUNG MELDEN<span>?
+                    </h2>
+                    <p>Dies ist ein Erklärungstext, der die Handlung des Call to Actions erklärt/unterstützt.</p>
+                    <div class="contacts">
+                        <a class="phone" href="#">TELEFON</a>
+                        <a class="mail" href="#">E-MAIL</a>
+                    </div>
+                </div>   
+            </section>
+        </div>
+   </main>
+
+
+
+   <footer>
+    <div class="container">
+        <div class="footer">
+            <div class="footer-icon">
+                <a href="#">
+                    <img src="../assets/images/myCH_rot.png" alt="Logo" class="footer-icon__logo">
+                </a>
+            </div>
+            <div class="footer-contact">
+                <a class="footer-item footer-contact__phone" href="tel:0412345678">041 234 56 78</a>
+                <a class="footer-item footer-contact__email"  href="mailto:HALLO@EMAIL.CH">HALLO@EMAIL.CH</a>
+                <a class="footer-item footer-contact__instagram" href="#"><img src="../assets/icons/fo-insagram.svg" alt="instagram"></a>
+                <a class="footer-item footer-contact__facebook" href="#"><img src="../assets/icons/fo-facebook.svg" alt="facebook"></a>
+                <a class="footer-item footer-contact__youtube" href="#"><img src="../assets/icons/fo-youtube.svg" alt="youtube"></a>
+                <a class="footer-item footer-contact__twitter" href="#"><img src="../assets/icons/fo-twitter.svg" alt="twitter"></a>
+            </div>
+            <div class="footer-reserved">
+                <p>© 2022 #myCH Impressum . WiNK</p>
+            </div>
+        </div>
+    </div>  
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

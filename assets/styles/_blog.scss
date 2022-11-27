@@ -1,0 +1,276 @@
+@import './vars';
+
+
+.blog{
+    background-color: $color-white;
+}
+
+.blog-inner {
+    padding: 156px 193px 106px 193px;
+    
+    h2 {
+        @include title;
+    }
+
+    p {
+        @include desription;
+        max-width: 1510px;
+        padding: 0 0 0 7px;
+        margin: 58px 0 74px 0;
+    }
+
+    p span {
+        color:$color-light-red-c3;
+    }
+}    
+
+
+@media (max-width: 900px) {
+   
+    .blog-inner {
+        padding: 156px 150px 106px 150px;
+        
+    }  
+     
+}
+
+@media (max-width: 768px) {
+ 
+    .blog-inner {
+        padding: 156px 125px 106px 125px;
+
+        h2 {
+            font-size: 90px;
+        }
+
+        p {
+            font-size: 35px;
+        }
+    }  
+   
+}
+
+@media (max-width: 675px) {
+ 
+    .blog-inner {
+        padding: 156px 80px 106px 80px;
+    }  
+   
+}
+
+
+@media (max-width: 478px) {
+ 
+    .blog-inner {
+        padding: 156px 60px 106px 60px;
+
+        h2 {
+            font-size: 60px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }  
+   
+}
+
+@media (max-width: 390px) {
+ 
+    .blog-inner {
+        padding: 156px 30px 106px 30px;
+    }  
+   
+}
+
+
+
+.filter-btns {
+    button {
+        font-size: 16px;
+        font-weight: $fw-700;
+        color: $color-light-orange-dd;
+        padding: 5px 14px;
+        border: 1px solid $color-light-orange-dd;
+        border-radius: 26px;
+        margin-right: 25px;
+    }
+
+    .active-btn {
+        color:$color-dark-red;
+        background-color: $color-light-orange-dd;
+    }
+}
+
+@media (max-width: 1816px){
+    .filter-btns {
+        button:nth-child(8) {
+        margin-top: 20px;
+      }
+  }
+}
+
+@media (max-width: 1140px){
+    .filter-btns {
+        button:nth-child(7) {
+        margin-top: 20px;
+      }
+  }
+}
+
+@media (max-width: 964px){
+    .filter-btns {
+        button:nth-child(6) {
+        margin-top: 20px;
+      }
+  }
+}
+
+@media (max-width: 793px){
+    .filter-btns {
+        button:nth-child(5) {
+        margin-top: 20px;
+      }
+  }
+}
+
+@media (max-width: 768px){
+    .filter-btns {
+        button {
+            font-size: 12px;
+            padding: 3px 10px;
+            margin-right: 15px;
+        }
+  }
+}
+
+
+@media (max-width: 493px){
+    .filter-btns {
+        button {
+            font-size: 10px;
+            padding: 3px 10px;
+            margin-right: 15px;
+        }
+  }
+}
+
+@media (max-width: 397px){
+    .filter-btns {
+        button:nth-child(4) {
+        margin-top: 15px;
+      }
+  }
+}
+
+
+
+// Call to action
+
+.call-to-action{
+    background-color: $color-white;
+}
+
+.call-to-action-inner {
+    max-width: 1537px;
+    margin: 0 auto;
+    padding: 165px 0 200px 0;
+
+    h2 {
+        @include title;
+        font-size: 120px;
+        text-align: center;
+    }
+
+    h2 span {
+        color:$color-light-red-c3; 
+    }
+
+    p {
+       @include text; 
+       text-align: center;
+       margin: 70px 0 36px 0;
+    }
+}
+
+.contacts {
+    max-width: 218.5px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone, 
+.mail {
+    font-family: $ff-barlow;
+    font-size: 16px;
+    font-weight: $fw-700;
+    text-decoration: none;
+    color: $color-light-red-c3;
+    text-transform: uppercase;
+}
+
+
+.phone:before {
+    content: url("../../assets/icons/phone_call-to-action.svg");
+    position: relative;
+    top:3px;
+    margin-right: 6.63px;
+}
+
+.mail:before {
+    content: url("../../assets/icons/mail_call-toaction.svg");
+    position: relative;
+    top:3px;
+    margin-right: 10.87px;
+} 
+
+
+
+@media (max-width: 768px){
+    .call-to-action-inner {
+    
+        h2 {
+            font-size: 80px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }  
+
+    .contacts {
+        max-width: 170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }  
+    
+    .phone, 
+    .mail {
+        font-size: 12px;  
+    }
+}
+
+@media (max-width: 547px){
+    .call-to-action-inner {
+    
+        h2 {
+            font-size: 60px;
+        }
+    }  
+}
+
+
+@media (max-width: 478px){
+    .call-to-action-inner {
+    
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }  
+}

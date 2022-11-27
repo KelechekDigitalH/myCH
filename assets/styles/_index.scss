@@ -1,0 +1,358 @@
+@import './vars';
+
+.banner {
+    
+    &__inner {
+        background-image: url('../../assets/images/banner.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 607px 0 35px 0;
+    }
+    
+    &__title--subtitle {
+        text-align: center;
+    }
+
+    &__title {
+        @include title;
+        color: $color-white;
+    }
+
+    &__subtitle {
+        font-family: $ff-barlow;
+        font-weight: $fw-500;
+        font-style: $fs-normal;
+        font-size: 18px;
+
+        color: $color-white;
+        margin: 0 0 96px 0;
+    }
+
+    &__button {
+        padding: 0 36px;
+    }
+    
+    &__link {
+        color: $color-white;
+        background-color: $color-light-red-c3;
+
+        text-decoration: none;
+        text-align: center;
+
+        padding: 16px 0;
+        border-radius: 25px;
+
+        width: 100%;
+        display: block;
+
+        font-family: $ff-barlow;
+        font-weight: $fw-700;
+        font-style: $fs-normal;
+        font-size: 16px;
+    }
+}
+
+.about {
+    
+    &__inner {
+        background-color: $color-white;
+        padding: 155px 345px 201px 339px;
+    }
+
+    &__title {
+        @include title;
+        max-width: 1014px;
+        line-height: 150px;
+
+        .about-has {
+            color: $color-light-red-c3;
+        }
+    }
+
+    &__photo-text {
+        max-width: 1045px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-top: 70px;
+        position: relative;
+    }
+
+    &__photo {
+        max-width: 270px;
+        height: 270px;
+    }
+
+    .about-img {
+        font-weight: 400;
+    }
+
+    &__prg {
+        @include text;
+        color: $color-white;
+        font-size: 14px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__text {
+        @include text;
+        width: 735px;
+        margin: 0 0 0 40px;
+    }
+}
+
+.information {
+
+    &__inner {
+        background-image: url('../../assets/images/info.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 400px;
+        position: relative;
+    }
+
+    &__overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.65);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__aktuell {
+        border: 1.5px solid;
+        border-color: $color-white;
+        border-radius: 26px;
+        color: $color-white;
+        padding: 5px 13px;
+
+        font-family: $ff-barlow;
+        font-weight: $fw-700;
+        font-size: 16px;
+        font-style: $fs-normal;
+
+        text-transform: uppercase;
+        width: max-content;
+    }
+    
+    &__all-blocks {
+        padding: 0 345px 0 338px;
+    }
+
+    &__title {
+        font-family: $ff-barlow;
+        font-weight: $fw-700;
+        font-size: 120px;
+        font-style: $fs-normal;
+
+        color: $color-white;
+        line-height: 120px;
+
+        padding: 15px 100px 74px 0;
+    }
+
+    &__prg-block {
+        max-width: 735px;
+        margin-left: auto;
+    }
+
+    &__prg {
+        font-family: $ff-barlow;
+        font-weight: $fw-500;
+        font-size: 18px;
+        font-style: $fs-normal;
+
+        color: $color-white;
+        line-height: 25px;
+        padding: 0 0 26px 0;
+    }
+
+    &__lesen {
+        font-family: $ff-barlow;
+        font-weight: $fw-700;
+        font-style: $fs-normal;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #c33324;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: calc(50% - 7.9px);
+        }
+
+        &::before{
+            width: 5px;
+            height: 5px;
+            background-color: #C33324;
+            border-radius: 50%;
+            content: '';
+            display: block;
+            position: absolute;
+            left: 5px;
+            top: calc(50% - 2.9px);
+        }
+
+        a{
+            text-decoration: none;
+            color: #C33324;
+            margin: 0 0 0 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .banner {
+
+        &__title {
+            font-size: 100px;
+        }
+    }
+
+    .about {
+        
+        &__inner {
+            padding: 120px 300px 180px 193px;
+        }
+
+        &__title {
+            font-size: 100px;
+            line-height: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .banner {
+
+        &__title {
+            font-size: 80px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__link {
+            font-size: 14px;
+            padding: 14px 0;
+        }
+    }
+
+    .about {
+        
+        &__inner {
+            padding: 80px 135px 80px 135px;
+        }
+
+        &__title {
+            font-size: 80px;
+            line-height: 80px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+
+        &__title {
+            font-size: 70px;
+        }
+    }
+
+    .about {
+
+        &__title {
+            font-size: 70px;
+            line-height: 65px;
+        }
+
+        &__inner {
+            padding: 45px 30px 45px 47px;
+        }
+
+        &__photo {
+            height: 195px;
+        }
+
+        &__photo-text {
+            display: block;
+            margin: 30px 0 0;
+        }
+
+        &__text {
+            margin: 20px 0 0;
+            width: auto;
+        }
+
+        &__prg {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .banner {
+
+        &__inner {
+            padding: 255px 0 35px 0;
+        }
+
+        &__title {
+            font-size: 40px;
+        }
+
+        &__subtitle {
+            font-size: 12px;
+        }
+
+        &__button {
+            padding: 0 25px;
+        }
+
+        &__link {
+            padding: 10px 0;
+        }
+    }
+
+    .about {
+
+        &__title {
+            font-size: 40px;
+            line-height: 40px;
+        }
+
+        &__inner {
+            padding: 19px 35px 20px 28px;
+        }
+
+        &__photo {
+            height: 195px;
+        }
+
+        &__prg {
+            font-size: 12px;
+        }
+    }
+}
