@@ -396,15 +396,15 @@
     }
 
     &__block {
-        // position: relative;
-        width: 57%;
-        margin: 0 0 0 auto;
-        padding-bottom: 198px;
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: 0 0 198px 0;
     }
 }
 
 .prev-article,
 .next-article {
+
     p {
         @include title;
         font-size: 16px;
@@ -413,8 +413,6 @@
     }
     
 }
-
-
 
 .prev-article {
     position: absolute;
@@ -432,6 +430,8 @@
 
 .center-article {
     position: relative;
+    width: 60%;
+    margin: 0 0 0 auto;
 
     p {
         @include text;
@@ -492,8 +492,12 @@ ul {
 
         h2 {
             font-size: 100px; 
-          }
-        
+        }
+
+        &__block {
+            padding: 0 100px 198px 100px;
+        }
+ 
     }
 }
 
@@ -511,6 +515,10 @@ ul {
             margin: 0 50px;
             padding: 149px 0 0 0; 
         }
+
+        &__block {
+            padding: 0 50px  198px 50px;
+        }
     }
 }
 
@@ -523,6 +531,18 @@ ul {
         h2 {
             font-size: 50px; 
           }
+
+          &__block {
+            padding: 0 30px  150px 30px;
+        }  
+    }
+}
+
+@media (max-width: 585px){
+    .center-article {
+        width: 70%;
+        margin: 0 auto;
+        padding: 0 0px;
     }
 }
 
@@ -531,11 +551,25 @@ ul {
         &__title {
             padding: 100px 0 0 0; 
         }
+
         h2 {
             font-size: 40px; 
-          } 
+        } 
     }
 }
+
+@media (max-width: 420px) {
+    .center-article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 360px){
+    .center-article {
+        width: 100%;
+    }
+}
+
 
 //** image-banner section
 
@@ -557,13 +591,15 @@ ul {
     background-color: $color-white;
 
     &__wrapper {
-        width: 57%;
-        margin: 0 0 0 auto;
-        padding-top: 193px;
+        max-width: 1360px;
+        margin: 0  auto;
+        padding: 193px 0 0 0;
     }
 
     &__question {
-        max-width: 735px;
+        width: 60%;
+        margin: 0 0 0 auto;
+    
 
         h3 {
             @include title;
@@ -583,11 +619,22 @@ ul {
         }
     }
 
+    &__question-inner {
+        max-width: 735px;
+    }
+
     &__question + &__question {
         margin-top: 23px;
     }
 
     .expert-opinions {
+        width: 60%;
+        margin: 189px 0 0 auto;
+
+        &__inner {
+            max-width: 735px;
+        }
+
         h3 {
             @include title;
             font-size: 25px;
@@ -596,36 +643,40 @@ ul {
 
         p {
             @include text;
+            margin: 12px 0 20px 0;
         }
 
-        // a span:after {
-        //     content: "";
-        //     display: block;
-        //     width: 15px;
-        //     height: 15px;
-        //     border: 1px solid #c33324;
-        //     border-radius: 50%;
-        //     position: absolute;
-        //     // left: 1rem;
-        //     // top: calc(50% - 7.9px);
-        // }
+        a span:after {
+            content: "";
+            display: block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #c33324;
+            border-radius: 50%;
+            position: absolute;
+            left: 1rem;
+            top: calc(50% - 7.9px);
+        }
 
-        // a span:before {
-        //     width: 5px;
-        //     height: 5px;
-        //     background-color: #c33324;
-        //     border-radius: 50%;
-        //     content: "";
-        //     display: block;
-        //     position: absolute;
-        //     // left: 20.7px;
-        //     // top: calc(50% - 2.9px);
-        // }
+        a span:before {
+            width: 5px;
+            height: 5px;
+            background-color: #c33324;
+            border-radius: 50%;
+            content: "";
+            display: block;
+            position: absolute;
+            left: 20.7px;
+            top: calc(50% - 2.9px);
+        }
 
     }
 
     .site-link {
+        position: relative;
+    
         a {
+            margin-left: 25px;
             text-decoration: none;
             @include title;
             font-size: 16px;
@@ -641,8 +692,8 @@ ul {
         content: "";
         display: block;
         position: absolute;
-        // left: 20.7px;
-        // top: calc(50% - 2.9px);
+        left: 4.7px;
+        top: calc(50% - 2.9px);
     }
 
     .site-link::after {
@@ -653,7 +704,82 @@ ul {
         border: 1px solid #c33324;
         border-radius: 50%;
         position: absolute;
-        // left: 1rem;
-        // top: calc(50% - 7.9px);
+        left: 0rem;
+        top: calc(50% - 7.9px);
     }
 }
+
+
+@media (max-width: 1440px) {
+    .interview {
+        &__wrapper {
+           padding: 193px 100px  0 100px;
+        }
+    }
+}
+
+@media (max-width: 1040px) {
+    .interview {
+        &__wrapper {
+           padding: 150px 100px  0 100px;
+        }
+        
+        .expert-opinions {
+            margin: 150px 0 0 auto;
+        }
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    .interview {
+        &__wrapper {
+           padding: 150px 50px  0 50px;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .interview {
+        &__wrapper {
+           padding: 100px 30px  0 30px;
+        }
+    }
+}
+
+
+@media (max-width: 585px) {
+    .interview {
+        &__question {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .expert-opinions {
+            width: 70%;
+            margin: 100px auto 0 auto;
+        }
+
+    }
+}
+
+
+@media (max-width: 420px) {
+    .interview {
+        &__question,
+        .expert-opinions{
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .interview {
+        &__question,
+        .expert-opinions{
+            width: 100%;
+        }
+    }
+}
+
