@@ -598,34 +598,36 @@ ul {
             @include text;
         }
 
-        // a span:after {
-        //     content: "";
-        //     display: block;
-        //     width: 15px;
-        //     height: 15px;
-        //     border: 1px solid #c33324;
-        //     border-radius: 50%;
-        //     position: absolute;
-        //     // left: 1rem;
-        //     // top: calc(50% - 7.9px);
-        // }
+        a span:after {
+            content: "";
+            display: block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #c33324;
+            border-radius: 50%;
+            position: absolute;
+            left: 1rem;
+            top: calc(50% - 7.9px);
+        }
 
-        // a span:before {
-        //     width: 5px;
-        //     height: 5px;
-        //     background-color: #c33324;
-        //     border-radius: 50%;
-        //     content: "";
-        //     display: block;
-        //     position: absolute;
-        //     // left: 20.7px;
-        //     // top: calc(50% - 2.9px);
-        // }
+        a span:before {
+            width: 5px;
+            height: 5px;
+            background-color: #c33324;
+            border-radius: 50%;
+            content: "";
+            display: block;
+            position: absolute;
+            left: 20.7px;
+            top: calc(50% - 2.9px);
+        }
 
     }
 
     .site-link {
+        position: relative;
         a {
+            margin-left: 25px;
             text-decoration: none;
             @include title;
             font-size: 16px;
@@ -641,8 +643,8 @@ ul {
         content: "";
         display: block;
         position: absolute;
-        // left: 20.7px;
-        // top: calc(50% - 2.9px);
+        left: 4.7px;
+        top: calc(50% - 2.9px);
     }
 
     .site-link::after {
@@ -653,7 +655,7 @@ ul {
         border: 1px solid #c33324;
         border-radius: 50%;
         position: absolute;
-        // left: 1rem;
-        // top: calc(50% - 7.9px);
+        left: 0rem;
+        top: calc(50% - 7.9px);
     }
 }
