@@ -159,8 +159,12 @@
                         <form class="comment-form__inner">
                             <textarea name="comments" id="comments" minlength="20" maxlength="120" form="myForm" placeholder="Kommentar erfassen"></textarea><br>
                             <div class="comment-form__buttons">
-                                <button>ABBRECHEN</button>
-                                <input type="submit" value="SENDEN">
+                                <div class="btn-box">
+                                    <button>ABBRECHEN</button>
+                                </div>
+                                <div class="input-box">
+                                    <input type="submit" value="SENDEN">
+                                </div>
                             </div>
                         </form>    
                     </div>
@@ -168,19 +172,26 @@
                         <div class="box-container__inner">
                             <h5>Name Vorname</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <button>KOMMENTAR ERFASSEN</button>
+                            <div class="box-container__btn">
+                                <img src="./assets/icons/comment-arrow.svg" alt="arrow-icon">
+                                <button>KOMMENTAR ERFASSEN</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="response-form">
-                        <div class="response-form__inner">
+                    <div class="response-box">
+                        <div class="response-box__inner">
                             <h5>Name Vorname</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <form class="response-form">
+                            <form class="response-box__form">
                                 <textarea name="comments" id="comments" minlength="20" maxlength="120" form="myForm" placeholder="Kommentar erfassen"></textarea>
                                 <br>
                                 <div class="comment-form__buttons">
-                                    <button>ABBRECHEN</button>
-                                    <input type="submit" value="SENDEN">
+                                    <div class="btn-box">
+                                        <button>ABBRECHEN</button>
+                                    </div>
+                                    <div class="input-box">
+                                        <input type="submit" value="SENDEN">
+                                    </div>
                                 </div>
                             </form>    
                         </div>
