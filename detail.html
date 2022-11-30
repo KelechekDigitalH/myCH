@@ -155,16 +155,36 @@
             <section class="comment">
                 <div class="comment__wrapper">
                     <h2>KOMMENTARE</h2>
-                    <form class="comment__form">
-                        <textarea name="comments" id="comments" minlength="20" maxlength="120" form="myForm">
-                            Kommentar erfassen
-                        </textarea><br>
-                            <!-- <form action="/html/tags/html_form_tag_action.cfm" target="processForm2" method="post" id="myForm"> -->
-                        <button>ABBRECHEN</button>
-                        <input type="submit" value="SENDEN">
-                            <!-- </form> -->
-                            <!-- <iframe name="processForm2" width="100%" height="50%"></iframe> -->
-                    </form>    
+                    <div class="comment-form">
+                        <form class="comment-form__inner">
+                            <textarea name="comments" id="comments" minlength="20" maxlength="120" form="myForm" placeholder="Kommentar erfassen"></textarea><br>
+                            <div class="comment-form__buttons">
+                                <button>ABBRECHEN</button>
+                                <input type="submit" value="SENDEN">
+                            </div>
+                        </form>    
+                    </div>
+                    <div class="box-container">
+                        <div class="box-container__inner">
+                            <h5>Name Vorname</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <button>KOMMENTAR ERFASSEN</button>
+                        </div>
+                    </div>
+                    <div class="response-form">
+                        <div class="response-form__inner">
+                            <h5>Name Vorname</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <form class="response-form">
+                                <textarea name="comments" id="comments" minlength="20" maxlength="120" form="myForm" placeholder="Kommentar erfassen"></textarea>
+                                <br>
+                                <div class="comment-form__buttons">
+                                    <button>ABBRECHEN</button>
+                                    <input type="submit" value="SENDEN">
+                                </div>
+                            </form>    
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
