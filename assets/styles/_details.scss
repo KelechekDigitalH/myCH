@@ -800,16 +800,133 @@ ul {
         font-size: 120px;
     }
 
-    &__form {
-        background-color: $color-light-blue;
+    .comment-form {
+        padding-bottom: 50px;
+
+        &__inner {
+            padding: 23px 25px;
+            background-color: $color-light-blue;
+        }
+        
         textarea {
             width: 100%;
             background-color: transparent;
             border-style: none;
+
             &:focus {
                 outline: none;
              }
-         }
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: flex-end
+        }
+
+        button {
+            @include text;
+            font-size: 16px;
+            font-weight: $fw-700;
+            color: $color-white;
+            background-color: transparent;
+            border-style: none;
+
+            &:before {
+                width: 5px;
+                height: 5px;
+                background-color: #c33324;
+                border-radius: 50%;
+                content: "";
+                display: block;
+                position: absolute;
+                left: 20.7px;
+                top: calc(50% - 2.9px);
+            }
+
+            &:after {
+                content: "";
+                display: block;
+                width: 15px;
+                height: 15px;
+                border: 1px solid #c33324;
+                border-radius: 50%;
+                position: absolute;
+                left: 0rem;
+                top: calc(50% - 7.9px);  
+            }
+        }
+
+        input {
+            @include text;
+            font-size: 16px;
+            font-weight: $fw-700;
+            color: $color-light-red-c3;
+            background-color: transparent;
+            border-style: none;
+        }
+    }
+
+    .box-container {
+        padding-bottom: 50px;
+
+        &__inner {
+            padding: 23px 25px;
+            background-color: $color-light-blue;
+        }
+
+        h5 {
+            @include text;
+            font-weight: $fw-700;
+        }
+
+        p {
+            @include text;
+            max-width: 1172px;
+            margin: 15px  0  40px 0;
+        }
+
+
+        button {
+            @include text;
+            font-size: 16px;
+            font-weight: $fw-700;
+            color: $color-light-red-c3;
+            background-color: transparent;
+            border-style: none;
+        }
+    }
+
+    .response-form {
+        &__inner {
+            padding: 23px 25px;
+            background-color: $color-light-blue;
+        }
+
+        h5 {
+            @include text;
+            font-weight: $fw-700;
+        }
+
+        p {
+            @include text;
+            max-width: 1172px;
+            margin: 15px  0  40px 0;
+        }
+
+        .response-form{
+            padding: 23px 25px;
+            background-color: rgba(255, 255, 255, 0.23);
+        }
+
+        textarea {
+            width: 100%;
+            background-color: transparent;
+            border-style: none;
+
+            &:focus {
+                outline: none;
+             }
+        }
     }
 }
 
