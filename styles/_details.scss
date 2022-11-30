@@ -798,6 +798,7 @@ ul {
     h2 {
         @include title;
         font-size: 120px;
+        margin-bottom: 76px;
     }
 
     .comment-form {
@@ -807,65 +808,121 @@ ul {
             padding: 23px 25px;
             background-color: $color-light-blue;
         }
-        
-        textarea {
-            width: 100%;
-            background-color: transparent;
-            border-style: none;
-
-            &:focus {
-                outline: none;
-             }
-        }
 
         &__buttons {
             display: flex;
-            justify-content: flex-end
+            justify-content: flex-end;
+            gap: 50px;
+            position: relative;
+        }           
+    }
+
+    .btn-box {
+        position: relative;
+    }
+
+    .comment-form textarea,
+    .response-box textarea {
+        width: 100%;
+        background-color: transparent;
+        border-style: none;
+        resize: none;
+
+        &:focus {
+            outline: none;
         }
 
-        button {
-            @include text;
-            font-size: 16px;
-            font-weight: $fw-700;
+        &::placeholder {
             color: $color-white;
-            background-color: transparent;
-            border-style: none;
-
-            &:before {
-                width: 5px;
-                height: 5px;
-                background-color: #c33324;
-                border-radius: 50%;
-                content: "";
-                display: block;
-                position: absolute;
-                left: 20.7px;
-                top: calc(50% - 2.9px);
-            }
-
-            &:after {
-                content: "";
-                display: block;
-                width: 15px;
-                height: 15px;
-                border: 1px solid #c33324;
-                border-radius: 50%;
-                position: absolute;
-                left: 0rem;
-                top: calc(50% - 7.9px);  
-            }
-        }
-
-        input {
-            @include text;
-            font-size: 16px;
-            font-weight: $fw-700;
-            color: $color-light-red-c3;
-            background-color: transparent;
-            border-style: none;
         }
     }
 
+
+    .box-container h5,
+    .response-box h5 {
+        @include text;
+        font-weight: $fw-700;
+    }
+
+    .box-container p,
+    .response-box p {
+        @include text;
+        max-width: 1172px;
+        margin: 15px  0  40px 0;
+    } 
+
+    .comment-form button,
+    .response-box button {
+        @include text;
+        font-size: 16px;
+        font-weight: $fw-700;
+        color: $color-white;
+        background-color: transparent;
+        border-style: none;
+        cursor: pointer;
+
+        &::after{
+            content: "";
+            display: block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            left: -1.5rem;
+            top: calc(50% - 7.9px);
+        }
+
+        &::before {
+            width: 5px;
+            height: 5px;
+            background-color: #fff;
+            border-radius: 50%;
+            content: "";
+            display: block;
+            position: absolute;
+            left: -19px;
+            top: calc(50% - 2.9px);
+        }
+    }
+    
+    .comment-form input,
+    .response-box input {
+        @include text;
+        font-size: 16px;
+        font-weight: $fw-700;
+        color: $color-light-red-c3;
+        background-color: transparent;
+        border-style: none;
+        cursor: pointer;
+
+        
+    } 
+    .input-box {
+        &::after{
+            content: "";
+            display: block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #c33324;
+            border-radius: 50%;
+            position: absolute;
+            right: 4.2rem;
+            top: calc(50% - 7.9px);
+        }
+
+        &::before {
+            width: 5px;
+            height: 5px;
+            background-color: #c33324;
+            border-radius: 50%;
+            content: "";
+            display: block;
+            position: absolute;
+            right: 71.7px;
+            top: calc(50% - 2.9px);
+        }
+    }
     .box-container {
         padding-bottom: 50px;
 
@@ -874,17 +931,16 @@ ul {
             background-color: $color-light-blue;
         }
 
-        h5 {
-            @include text;
-            font-weight: $fw-700;
+        &__btn {
+            display: flex;
+            align-items: center;
+            gap: 17px;
         }
 
-        p {
-            @include text;
-            max-width: 1172px;
-            margin: 15px  0  40px 0;
+        &__btn img{
+           width: 20px;
+           height: 20px;
         }
-
 
         button {
             @include text;
@@ -896,36 +952,15 @@ ul {
         }
     }
 
-    .response-form {
+    .response-box {
         &__inner {
             padding: 23px 25px;
             background-color: $color-light-blue;
         }
 
-        h5 {
-            @include text;
-            font-weight: $fw-700;
-        }
-
-        p {
-            @include text;
-            max-width: 1172px;
-            margin: 15px  0  40px 0;
-        }
-
-        .response-form{
+        &__form {
             padding: 23px 25px;
             background-color: rgba(255, 255, 255, 0.23);
-        }
-
-        textarea {
-            width: 100%;
-            background-color: transparent;
-            border-style: none;
-
-            &:focus {
-                outline: none;
-             }
         }
     }
 }
