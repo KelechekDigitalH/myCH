@@ -14,7 +14,16 @@
                 <a class="header-logo" href="#">
                     <img src="../assets/images/myCH_rot.png" alt="Logo" class="header-logo__img">
                 </a>
-                <nav>
+                <!-- <div class="header__burger">
+                    <span></span>
+                </div> -->
+                
+                
+                <nav class="menu">
+
+                    <label for="drop" class="toggle"><span>&#9776;</span></label>
+                    <input type="checkbox" id="drop" />
+                    
                     <ul class="nav">
                         <li class="nav-item active">
                             <a class="nav-link active" href="#">BLOG</a>
@@ -87,7 +96,7 @@
                         <option value="KZ">KZ</option>
                     </select>
                   </div>
-                <table class="table" id="filterTable">
+                <table class="table display responsive nowrap" width="100%" id="filterTable">
                     <thead>
                       <tr>
                         <th scope="col">Product Group</th>
