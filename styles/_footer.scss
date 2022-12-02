@@ -70,7 +70,12 @@ footer{
         }
         @media (max-width: 420px) {
             &__phone, &__email {
-                padding: 15px 25px;
+                padding: 15px 36px;
+            }
+        }
+        @media (max-width: 385px) {
+            &__phone, &__email {
+                padding: 15px 28px;
             }
         }
 
