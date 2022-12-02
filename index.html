@@ -11,16 +11,24 @@
 
 <body>
     <!-- Header -->
-    <!-- <header>
+    <header>
         <div class="container">
             <div class="header">
                 <a class="header-logo" href="#">
-                    <img src="./assets/images/myCH_rot.png" alt="Logo" class="header-logo__img">
+                    <img src="../assets/images/myCH_rot.png" alt="Logo" class="header-logo__img">
                 </a>
-                <nav>
+                <!-- <div class="header__burger">
+                    <span></span>
+                </div> -->
+                
+                <nav class="menu">
+
+                    <label for="drop" class="toggle"><span>&#9776;</span></label>
+                    <input type="checkbox" id="drop" />
+                    
                     <ul class="nav">
                         <li class="nav-item active">
-                            <a class="nav-link active" href="#">blogs</a>
+                            <a class="nav-link active" href="#">BLOG</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">VERANSTALTUNGEN</a>
@@ -29,7 +37,7 @@
                             <a class="nav-link" href="#">ÜBER UNS</a>
                         </li>
                         <li class="nav-item">
-                            <button class="nav-btn__account"><img src="./assets/images/kontact.png" alt=""></button>
+                            <button class="nav-btn__account"><img src="../assets/images/kontact.png" alt=""></button>
                         </li>
                         <li class="nav-item">
                             <button class="nav-btn__kontact">KONTAKT</button>
@@ -38,253 +46,255 @@
                 </nav>
             </div>
         </div>
-    </header> -->
+    </header>
 
-    <!-- Banner Section -->
-    <section class="banner">
-        <div class="container">
-            <div class="banner__inner">
-                <div class="banner__title--subtitle">
-                    <h1 class="banner__title">Mach mit!</h1>
-                    <h4 class="banner__subtitle">wir geben dir deine Stimme</h4>
-                </div>
-                <div class="banner__button">
-                    <a class="banner__link" href="#">ZU ALLEN BEITRÄGEN</a>
-                </div>
-            </div>
-
-            <div class="social-media">
-                <div class="social-media__inner">
-                    <a class="social-media__link" href="#">
-                        <img class="social-media__icon" src="./assets/icons/instagram.svg" alt="instagram">
-                    </a>
-                    <a class="social-media__link" href="#">
-                        <img class="social-media__icon" src="./assets/icons/facebook.svg" alt="facebook">
-                    </a>
-                    <a class="social-media__link" href="#">
-                        <img class="social-media__icon" src="./assets/icons/youtube.svg" alt="youtube">
-                    </a>
-                    <a class="social-media__link" href="#">
-                        <img class="social-media__icon" src="./assets/icons/twitter.svg" alt="twitter">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about">
-        <div class="container">
-            <div class="about__inner">
-                <h2 class="about__title">WAS STECKT HINTER <span class="about-has">#MYCH</span></h2>
-
-                <div class="about__photo-text">
-                    <div class="about__photo">
-                        <img class="about__img" src="./assets/images/family.jpg" alt="Family photo">
+    <main>
+        <!-- Banner Section -->
+        <section class="banner">
+            <div class="container">
+                <div class="banner__inner">
+                    <div class="banner__title--subtitle">
+                        <h1 class="banner__title">Mach mit!</h1>
+                        <h4 class="banner__subtitle">wir geben dir deine Stimme</h4>
                     </div>
-
-                    <p class="about__text">Das könnte ein Lead sein, der den anschliessenden Abschnitt kurz zusammenfasst. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quiepakis nostrud Link exercitation ullamco laboris nsi ut aliquip ex ea comepmodo consetquat. Duis aute irure dolor in reprehenderit in voluptate velit esse cfgillum dolore eutpe fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inpeku culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="banner__button">
+                        <a class="banner__link" href="#">ZU ALLEN BEITRÄGEN</a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Information Section -->
-    <section class="information">
-        <div class="container">
-            <div class="information__inner">
-                <div class="information__all-blocks">
-                    <h2 class="information__aktuell">aktuell</h2>
-
-                    <h2 class="information__title">EIN GEDANKE – EINE REBELLION</h2>
-                    <div class="information__prg-block">
-                        <p class="information__prg">Das könnte ein Lead sein, der den anschliessenden Abschnitt kurz zusammenfasst. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quiepakis nostrud Link exercitation ullamco laboris nsi ut aliquip ex ea comepmodo consetquat. Duis aute irure dolor in reprehenderit in voluptate velit esse cfgillum dolore eutpe fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inpeku culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <div class="information__lesen"><a href="google.com">lesen</a></div>
+                <div class="social-media">
+                    <div class="social-media__inner">
+                        <a class="social-media__link" href="#">
+                            <img class="social-media__icon" src="./assets/icons/instagram.svg" alt="instagram">
+                        </a>
+                        <a class="social-media__link" href="#">
+                            <img class="social-media__icon" src="./assets/icons/facebook.svg" alt="facebook">
+                        </a>
+                        <a class="social-media__link" href="#">
+                            <img class="social-media__icon" src="./assets/icons/youtube.svg" alt="youtube">
+                        </a>
+                        <a class="social-media__link" href="#">
+                            <img class="social-media__icon" src="./assets/icons/twitter.svg" alt="twitter">
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Blogs Section -->
-    <section class="blogs">
-        <div class="container">
-            <div class="blogs__inner">
-                <div class="blogs__all-bloks">
-                    <div class="blogs__block">
-                        <div class="blogs__img">
-                            <img src="https://media.gettyimages.com/id/1171630508/photo/a-woman-who-looks-back-while-crossing-shoulder.jpg?s=2048x2048&w=gi&k=20&c=KWKuodKSq3PPxAqrgjYP2gQOo0eEeGMg6BQdociOzkA=" alt="">
+        <!-- About Section -->
+        <section class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <h2 class="about__title">WAS STECKT HINTER <span class="about-has">#MYCH</span></h2>
+
+                    <div class="about__photo-text">
+                        <div class="about__photo">
+                            <img class="about__img" src="./assets/images/family.jpg" alt="Family photo">
                         </div>
 
-                        <h2 class="blogs__interview">interview</h2>
-
-                        <h4 class="blogs__title">Ein Gedanke – Eine Rebellion</h4>
-                         <p class="blogs__prg">Ein Gedicht von Savannah über Rebellion, Identität, Stereotype und den Anpassungswahnsinn.</p>
-                        <div class="blogs__lesen"><a href="google.com">lesen</a></div>
+                        <p class="about__text">Das könnte ein Lead sein, der den anschliessenden Abschnitt kurz zusammenfasst. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quiepakis nostrud Link exercitation ullamco laboris nsi ut aliquip ex ea comepmodo consetquat. Duis aute irure dolor in reprehenderit in voluptate velit esse cfgillum dolore eutpe fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inpeku culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="blogs__block">
-                        <div class="blogs__img">
-                            <img src="https://media.gettyimages.com/id/1401377263/photo/young-friends-making-faces-inside-photo-booth.jpg?s=1024x1024&w=gi&k=20&c=SQUndly3conzuAHibT19LQ4SPkn8W2T1JLIV-0Mqbsg=" alt="">
+        <!-- Information Section -->
+        <section class="information">
+            <div class="container">
+                <div class="information__inner">
+                    <div class="information__all-blocks">
+                        <h2 class="information__aktuell">aktuell</h2>
+
+                        <h2 class="information__title">EIN GEDANKE – EINE REBELLION</h2>
+                        <div class="information__prg-block">
+                            <p class="information__prg">Das könnte ein Lead sein, der den anschliessenden Abschnitt kurz zusammenfasst. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quiepakis nostrud Link exercitation ullamco laboris nsi ut aliquip ex ea comepmodo consetquat. Duis aute irure dolor in reprehenderit in voluptate velit esse cfgillum dolore eutpe fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inpeku culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="information__lesen"><a href="google.com">lesen</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blogs Section -->
+        <section class="blogs">
+            <div class="container">
+                <div class="blogs__inner">
+                    <div class="blogs__all-bloks">
+                        <div class="blogs__block">
+                            <div class="blogs__img">
+                                <img src="https://media.gettyimages.com/id/1171630508/photo/a-woman-who-looks-back-while-crossing-shoulder.jpg?s=2048x2048&w=gi&k=20&c=KWKuodKSq3PPxAqrgjYP2gQOo0eEeGMg6BQdociOzkA=" alt="">
+                            </div>
+
+                            <h2 class="blogs__interview">interview</h2>
+
+                            <h4 class="blogs__title">Ein Gedanke – Eine Rebellion</h4>
+                            <p class="blogs__prg">Ein Gedicht von Savannah über Rebellion, Identität, Stereotype und den Anpassungswahnsinn.</p>
+                            <div class="blogs__lesen"><a href="google.com">lesen</a></div>
                         </div>
 
-                        <h2 class="blogs__interview">interview</h2>
+                        <div class="blogs__block">
+                            <div class="blogs__img">
+                                <img src="https://media.gettyimages.com/id/1401377263/photo/young-friends-making-faces-inside-photo-booth.jpg?s=1024x1024&w=gi&k=20&c=SQUndly3conzuAHibT19LQ4SPkn8W2T1JLIV-0Mqbsg=" alt="">
+                            </div>
 
-                        <h4 class="blogs__title">Lebenszeichen</h4>
-                        <p class="blogs__prg">Ein Gedicht von Savannah über Rebellion, Identität, Stereotype und den Anpassungswahnsinn.</p>
-                        <div class="blogs__lesen"><a href="google.com">lesen</a></div>
+                            <h2 class="blogs__interview">interview</h2>
+
+                            <h4 class="blogs__title">Lebenszeichen</h4>
+                            <p class="blogs__prg">Ein Gedicht von Savannah über Rebellion, Identität, Stereotype und den Anpassungswahnsinn.</p>
+                            <div class="blogs__lesen"><a href="google.com">lesen</a></div>
+                        </div>
+
+                        <div class="blogs__block">
+                            <div class="blogs__img">
+                                <img src="https://media.gettyimages.com/id/1419717196/photo/a-beautiful-happy-woman-talking-to-her-multiethnic-friends-at-some-social-gathering-while.jpg?s=1024x1024&w=gi&k=20&c=PqUHEnHpzezl9Sg_s_Ti_PJxCMYH4JzZCJg9wFDohRY=" alt="">
+                            </div>
+
+                            <h2 class="blogs__interview">interview</h2>
+
+                            <h4 class="blogs__title">Die Geheimagentin – Zum Zusammenhang von kultureller Identität</h4>
+                            <p class="blogs__prg">Ein Gedicht von Savannah über Rebellion, Identität, Stereotype und den Anpassungswahnsinn.</p>
+                            <div class="blogs__lesen"><a href="google.com">lesen</a></div>
+                        </div>
                     </div>
 
-                    <div class="blogs__block">
-                        <div class="blogs__img">
+                    <div class="blogs__button">
+                        <a class="blogs__link" href="#">ZU ALLEN BEITRÄGEN</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section class="events">
+            <div class="container">
+                <div class="events__inner">
+                    <div class="events__white-sircle-one"></div>
+                    <h2 class="events__last-events">NEUSTE VERANSTALTUNGEN</h2>
+
+                    <h2 class="events__title">SAISONSTART IM <span class="events__hello">HELLOWELCOME</span>- GARTEN GEGLÜCKT</h2>
+
+                    <div class="events__prg-link">
+                        <p class="events__prg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="events__zuder"><a href="google.com">ZU DER VERANSTALTUNG</a></div>
+                    </div>
+                    <div class="events__white-sircle-two"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photos Section -->
+        <section class="photos">
+            <div class="container">
+                <div class="photos__inner">
+                    <h2 class="photos__title">WER STECKT HINTER <span class="photos__mych">#MYCH</span></h2>
+
+                    <div class="photos__first-block">
+                    <div class="photos__img-first">
                             <img src="https://media.gettyimages.com/id/1419717196/photo/a-beautiful-happy-woman-talking-to-her-multiethnic-friends-at-some-social-gathering-while.jpg?s=1024x1024&w=gi&k=20&c=PqUHEnHpzezl9Sg_s_Ti_PJxCMYH4JzZCJg9wFDohRY=" alt="">
-                        </div>
-
-                        <h2 class="blogs__interview">interview</h2>
-
-                        <h4 class="blogs__title">Die Geheimagentin – Zum Zusammenhang von kultureller Identität</h4>
-                        <p class="blogs__prg">Ein Gedicht von Savannah über Rebellion, Identität, Stereotype und den Anpassungswahnsinn.</p>
-                        <div class="blogs__lesen"><a href="google.com">lesen</a></div>
-                    </div>
-                </div>
-
-                <div class="blogs__button">
-                    <a class="blogs__link" href="#">ZU ALLEN BEITRÄGEN</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Events Section -->
-    <section class="events">
-        <div class="container">
-            <div class="events__inner">
-                <div class="events__white-sircle-one"></div>
-                <h2 class="events__last-events">NEUSTE VERANSTALTUNGEN</h2>
-
-                <h2 class="events__title">SAISONSTART IM <span class="events__hello">HELLOWELCOME</span>- GARTEN GEGLÜCKT</h2>
-
-                <div class="events__prg-link">
-                    <p class="events__prg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div class="events__zuder"><a href="google.com">ZU DER VERANSTALTUNG</a></div>
-                </div>
-                <div class="events__white-sircle-two"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Photos Section -->
-    <section class="photos">
-        <div class="container">
-            <div class="photos__inner">
-                <h2 class="photos__title">WER STECKT HINTER <span class="photos__mych">#MYCH</span></h2>
-
-                <div class="photos__first-block">
-                   <div class="photos__img-first">
-                        <img src="https://media.gettyimages.com/id/1419717196/photo/a-beautiful-happy-woman-talking-to-her-multiethnic-friends-at-some-social-gathering-while.jpg?s=1024x1024&w=gi&k=20&c=PqUHEnHpzezl9Sg_s_Ti_PJxCMYH4JzZCJg9wFDohRY=" alt="">
-                   </div>
-
-                   <div class="photos__info">
-                        <h2 class="photos__title-info">Das könnte ein Lead sein, der den anschliessenden Abschnitt kurz zusammenfasst.</h2>
-                        <p class="photos__prg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quiepakis nostrud exercitation ullamco laboris nsi ut aliquip ex ea comepmodo consetquat. Duis aute irure dolor in reprehenderit in voluptate velit esse cfgillum dolore eutpe fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inpeku culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <div class="photos__mehr"><a href="google.com">MEHR ERFAHREN</a></div>
-                   </div>
-                </div>
-
-                <div class="photos__second-block">
-                    <div class="photos__user-feedback">
-                        <p class="photos__user-text">Testimonial bezeichnet in der Werbung im Englischen die konkrete Fürsprache für ein Produkt, eine Dienstleistung, eine Idee oder Institution durch eine Person, die der Zielgruppe meist bekannt ist und mit ihrem Auftritt die Glaubwürdigkeit der Werbebotschaft erhöht.</p>
-                        <h5 class="photos__name">Vorname Name</h5>
-
-                        <div class="photos__buttons">
-                            <button class="photos__button-left">←</button>
-                            <button class="photos__button-right">→</button>
-                        </div>
                     </div>
 
-                    <div class="photos__img-second">
-                        <img src="https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGhvdG98ZW58MHx8MHx8&w=1000&q=80" alt="">
-                        <span class="photos__number">01 / 04</span>
+                    <div class="photos__info">
+                            <h2 class="photos__title-info">Das könnte ein Lead sein, der den anschliessenden Abschnitt kurz zusammenfasst.</h2>
+                            <p class="photos__prg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quiepakis nostrud exercitation ullamco laboris nsi ut aliquip ex ea comepmodo consetquat. Duis aute irure dolor in reprehenderit in voluptate velit esse cfgillum dolore eutpe fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inpeku culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="photos__mehr"><a href="google.com">MEHR ERFAHREN</a></div>
                     </div>
-                </div>
-
-                <div class="photos__third-block">
-                    <div class="photos__img-text-first">
-                        <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg" alt="">
-                        <h5 class="photos__text-first">Hier könnte eine Bildlegende stehen.</h5>
                     </div>
 
-                    <div class="photos__img-text-second">
-                        <img src="https://www.timeoutdubai.com/cloud/timeoutdubai/2022/02/14/How-to-take-great-photos-of%E2%80%A6the-desert-1024x768.jpg" alt="">
-                        <h5 class="photos__text-second">Hier könnte eine Bildlegende stehen.</h5>
-                    </div>
-                </div>
+                    <div class="photos__second-block">
+                        <div class="photos__user-feedback">
+                            <p class="photos__user-text">Testimonial bezeichnet in der Werbung im Englischen die konkrete Fürsprache für ein Produkt, eine Dienstleistung, eine Idee oder Institution durch eine Person, die der Zielgruppe meist bekannt ist und mit ihrem Auftritt die Glaubwürdigkeit der Werbebotschaft erhöht.</p>
+                            <h5 class="photos__name">Vorname Name</h5>
 
-                <div class="photos__foutrth-block">
-                    <div class="photos__img-text-fourth">
-                        <img src="https://www.bhg.com/thmb/z5-sV9SEXRHcAftjOY33eY-4zaI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/friends-laughing-by-the-river-95cd8f6921674f55bc22e34975887deb.jpg" alt="">
-                        <h5 class="photos__text-fourth">Hier könnte eine Bildlegende stehen.</h5>
-                    </div>
-                </div>
-
-                <div class="photos__fifth-block">
-                    <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/03/19/18/idoh-socialise.jpg?quality=75&width=1200&auto=webp" alt="">
-                    <h5 class="photos__text-fifth">Hier könnte eine Bildlegende stehen.</h5>
-                </div>
-
-                <div class="photos__sixth-block">
-                    <div class="photos__title-social-link">
-                        <h2 class="photos__title-sixth">FOLLOW US ON</h2>
-
-                        <div class="photos__social">
-                           <a class="photos__social-link" href="#"><img src="./assets/icons/fo-insagram.svg" alt="instagram"></a>
-                           <a class="photos__social-link" href="#"><img src="./assets/icons/fo-facebook.svg" alt="facebook"></a>
-                           <a class="photos__social-link" href="#"><img src="./assets/icons/fo-youtube.svg" alt="youtube"></a>
-                           <a class="photos__social-link" href="#"><img src="./assets/icons/fo-twitter.svg" alt="twitter"></a>
-                        </div>
-                    </div>
-
-                    <div class="photos__block-imgs">
-                        <div class="photos__first-imgs">
-                            <div class="photos__block-img">
-                                <div class="photos__img-inner">
-                                    <img src="https://images.pexels.com/photos/3680219/pexels-photo-3680219.jpeg?cs=srgb&dl=pexels-lukas-rodriguez-3680219.jpg&fm=jpg" alt="">
-                                </div>
-                                <div class="photos__img-inner">
-                                    <img src="https://images.pexels.com/photos/3680219/pexels-photo-3680219.jpeg?cs=srgb&dl=pexels-lukas-rodriguez-3680219.jpg&fm=jpg" alt="">
-                                </div>
-                            </div>
-
-                            <div class="photos__block-img">
-                                <div class="photos__img-inner">
-                                    <img src="https://images.pexels.com/photos/3680219/pexels-photo-3680219.jpeg?cs=srgb&dl=pexels-lukas-rodriguez-3680219.jpg&fm=jpg" alt="">
-                                </div>
-                                <div class="photos__img-inner">
-                                    <img src="https://images.pexels.com/photos/3680219/pexels-photo-3680219.jpeg?cs=srgb&dl=pexels-lukas-rodriguez-3680219.jpg&fm=jpg" alt="">
-                                </div>
+                            <div class="photos__buttons">
+                                <button class="photos__button-left">←</button>
+                                <button class="photos__button-right">→</button>
                             </div>
                         </div>
 
-                        <div class="photos__second-imgs">
-                            <img class="photos__img-sc" src="https://images.unsplash.com/photo-1554844453-7ea2a562a6c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBob3RvZ3JhcGh5fGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="">
+                        <div class="photos__img-second">
+                            <img src="https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGhvdG98ZW58MHx8MHx8&w=1000&q=80" alt="">
+                            <span class="photos__number">01 / 04</span>
+                        </div>
+                    </div>
+
+                    <div class="photos__third-block">
+                        <div class="photos__img-text-first">
+                            <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg" alt="">
+                            <h5 class="photos__text-first">Hier könnte eine Bildlegende stehen.</h5>
+                        </div>
+
+                        <div class="photos__img-text-second">
+                            <img src="https://www.timeoutdubai.com/cloud/timeoutdubai/2022/02/14/How-to-take-great-photos-of%E2%80%A6the-desert-1024x768.jpg" alt="">
+                            <h5 class="photos__text-second">Hier könnte eine Bildlegende stehen.</h5>
+                        </div>
+                    </div>
+
+                    <div class="photos__foutrth-block">
+                        <div class="photos__img-text-fourth">
+                            <img src="https://www.bhg.com/thmb/z5-sV9SEXRHcAftjOY33eY-4zaI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/friends-laughing-by-the-river-95cd8f6921674f55bc22e34975887deb.jpg" alt="">
+                            <h5 class="photos__text-fourth">Hier könnte eine Bildlegende stehen.</h5>
+                        </div>
+                    </div>
+
+                    <div class="photos__fifth-block">
+                        <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/03/19/18/idoh-socialise.jpg?quality=75&width=1200&auto=webp" alt="">
+                        <h5 class="photos__text-fifth">Hier könnte eine Bildlegende stehen.</h5>
+                    </div>
+
+                    <div class="photos__sixth-block">
+                        <div class="photos__title-social-link">
+                            <h2 class="photos__title-sixth">FOLLOW US ON</h2>
+
+                            <div class="photos__social">
+                            <a class="photos__social-link" href="#"><img src="./assets/icons/fo-insagram.svg" alt="instagram"></a>
+                            <a class="photos__social-link" href="#"><img src="./assets/icons/fo-facebook.svg" alt="facebook"></a>
+                            <a class="photos__social-link" href="#"><img src="./assets/icons/fo-youtube.svg" alt="youtube"></a>
+                            <a class="photos__social-link" href="#"><img src="./assets/icons/fo-twitter.svg" alt="twitter"></a>
+                            </div>
+                        </div>
+
+                        <div class="photos__block-imgs">
+                            <div class="photos__first-imgs">
+                                <div class="photos__block-img">
+                                    <div class="photos__img-inner">
+                                        <img src="https://images.pexels.com/photos/3680219/pexels-photo-3680219.jpeg?cs=srgb&dl=pexels-lukas-rodriguez-3680219.jpg&fm=jpg" alt="">
+                                    </div>
+                                    <div class="photos__img-inner">
+                                        <img src="https://images.pexels.com/photos/3680219/pexels-photo-3680219.jpeg?cs=srgb&dl=pexels-lukas-rodriguez-3680219.jpg&fm=jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="photos__block-img">
+                                    <div class="photos__img-inner">
+                                        <img src="https://images.pexels.com/photos/3680219/pexels-photo-3680219.jpeg?cs=srgb&dl=pexels-lukas-rodriguez-3680219.jpg&fm=jpg" alt="">
+                                    </div>
+                                    <div class="photos__img-inner">
+                                        <img src="https://images.pexels.com/photos/3680219/pexels-photo-3680219.jpeg?cs=srgb&dl=pexels-lukas-rodriguez-3680219.jpg&fm=jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="photos__second-imgs">
+                                <img class="photos__img-sc" src="https://images.unsplash.com/photo-1554844453-7ea2a562a6c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBob3RvZ3JhcGh5fGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="call-to-action-inner">
+                        <h2>MACH MIT, WIR GEBEN DIR <span>DEINE STIMME</span></h2>
+                        <p>Dies ist ein Erklärungstext, der die Handlung des Call to Actions erklärt/unterstützt.</p>
+                        <div class="contacts">
+                            <a class="phone" href="#">TELEFON</a>
+                            <a class="mail" href="#">E-MAIL</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="call-to-action-inner">
-                    <h2>MACH MIT, WIR GEBEN DIR <span>DEINE STIMME</span></h2>
-                    <p>Dies ist ein Erklärungstext, der die Handlung des Call to Actions erklärt/unterstützt.</p>
-                    <div class="contacts">
-                        <a class="phone" href="#">TELEFON</a>
-                        <a class="mail" href="#">E-MAIL</a>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <!-- <footer>
+    <footer>
         <div class="container">
             <div class="footer">
                 <div class="footer-icon">
@@ -304,8 +314,8 @@
                     <p>© 2022 #myCH Impressum . WiNK</p>
                 </div>
             </div>
-        </div>
-    </footer> -->
+        </div>  
+    </footer>
 </body>
 
 </html>

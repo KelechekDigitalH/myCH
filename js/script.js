@@ -1,6 +1,11 @@
 
 $("document").ready(function () {
   $("#filterTable").dataTable({
+    responsive: true,
+    columnDefs: [
+      { responsivePriority: 1, targets: 0 },
+      { responsivePriority: 2, targets: -1 }
+  ],
     "searching": true,
     paging: false,
     ordering: false,
@@ -90,3 +95,10 @@ $("document").ready(function () {
   });
   table.draw();
 });
+
+const burgerBtn = document.querySelector('.toggle');
+const header = document.querySelector('ul');
+
+burgerBtn.addEventListener('click',(e) => {
+    header.style.position = 'fixed';
+})

@@ -34,6 +34,33 @@ table .dataTable{
             box-sizing: content-box;
             border-top: 3px solid #fff;
         }
+        @media (max-width: 1370px) {
+            tr{
+                border-top: 3px solid #fff;
+                padding: 50px 89px;
+                display: inline-block;
+            }
+            td{
+                display:inline-block;
+                padding: 17px 0px 6px 57px;
+                width: 79%;
+                border-top: none;
+            }
+        }
+        @media (max-width: 1241px) {
+            tr{
+                padding: 50px 32px;
+            }
+        }
+        @media (max-width: 630px) {
+            tr{
+                padding: 17px 24px;
+            }
+            td{
+                padding: 17px 0px 6px 0px;
+                width: 93%;
+            }
+        }
     }
     &__name{
         letter-spacing: 0.75px;
@@ -42,6 +69,11 @@ table .dataTable{
         font-weight: bold;
         width: 460px;
 
+    }
+    @media (max-width : 1852px){
+        &__name{
+            width: 420px;
+        }
     }
     &__veranstaltung{
         font-size: 16px;
@@ -72,14 +104,45 @@ table .dataTable{
             left: 20.7px;
             top: calc(50% - 2.9px);
         }
+        @media (max-width: 1370px) {
+            &::after {
+                left: 33px;
+                top: calc(50% - 1.9px);
+            }
+            &::before{
+                left: 37.7px;
+                top: calc(50% - -3.1px);
+            }
+        }
+        @media (max-width: 630px) {
+            &::after {
+                left: -21px;
+                top: calc(50% - 1.9px);
+            }
+            &::before{
+                left: -15.8px;
+                top: calc(50% - -3.1px);
+            }
+        }
         a{
             text-decoration: none;
             color: #C33324;
         }
         
     }
+    @media (max-width: 1370px) {
+        &__veranstaltung{
+            left: 23px;
+        }
+    }
     
 }
+@media (max-width: 630px) {
+    .table{
+        padding: 0 0px 0 0px;
+    }
+}
+
 .dataTables_filter{
     margin-left: 38.1rem;
     margin-bottom: 41px;
@@ -115,6 +178,12 @@ table .dataTable{
         border-radius: 26px;
         padding: 5px 0px 6px 14px;
     }
+    @media (max-width: 833px) {
+        .form-control{
+            margin: 0 5px;  
+            margin-bottom: 10px;
+        }  
+    }
     // .form-control::after {
     //     content: '\25BC';
     //     position: absolute;
@@ -128,5 +197,11 @@ table .dataTable{
 
     #ortFilter{
         width: 115px;
+    }
+}
+@media (max-width: 1565px) {
+    .dataTables_filter{
+        margin-left: 0rem;
+        text-align: center;
     }
 }
