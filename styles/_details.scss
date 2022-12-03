@@ -164,6 +164,12 @@
             font-size: 28px;
         }
     }
+
+    &__button {
+        border-top: 20px solid transparent;
+        border-left: 40px solid $color-light-red-c3;
+        border-bottom: 20px solid transparent;
+    }
 }
 
 .poster {
