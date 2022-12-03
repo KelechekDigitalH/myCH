@@ -93,27 +93,6 @@
 }
 
 
-<<<<<<< HEAD
-@media all and (max-width : 1000px) {
-    main{
-        padding: 60px 0 0 0;
-    }
-    .header{
-        position: fixed;
-        width: 100%;
-        z-index: 999;
-    }
-    nav {
-		margin: 0;
-	}
-    .toggle + a,
-	.nav-menu {
-		display: none;
-	}
-    .nav-btn__account{
-        display: block;
-    }
-=======
 .hamburger{
     position: relative;
     width: 30px;
@@ -124,7 +103,6 @@
     z-index: 3;
     transition: 0.4s;
 }
->>>>>>> b4862d2 (hamburger)
 
 .hamburger::before,
 .hamburger::after{
@@ -199,6 +177,7 @@
         width: 300px;
         height: 100%;
         padding-top: 70px;
+        transition: 0.5s;
     }
     .nav-menu li{
         width: 100%;
