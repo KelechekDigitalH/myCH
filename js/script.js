@@ -1,3 +1,14 @@
+// Swiper
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 $("document").ready(function () {
   $("#filterTable").dataTable({
@@ -95,4 +106,3 @@ $("document").ready(function () {
   });
   table.draw();
 });
-
