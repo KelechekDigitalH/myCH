@@ -372,7 +372,7 @@
         border-radius: 50%;
 
         position: absolute; 
-        bottom: -90px;
+        bottom: -110px;
         left: 0; 
         right: 0; 
         margin-left: auto; 
@@ -1538,6 +1538,10 @@
             padding: 100px 0 0 0;
         }
 
+        &__first-block {
+            display: block;
+        }
+
         &__second-block {
             padding: 0 30px 0 0;
             margin-top: 100px;
@@ -1578,8 +1582,8 @@
         }
 
         &__info {
-            max-width: 200px;
-            margin: 0 0 0 20px;
+            max-width: 100%;
+            margin: 20px 20px 0 20px;
         }
 
         &__img-first {
@@ -1846,11 +1850,6 @@
 
         &__title-info {
             font-size: 14px;
-        }
-
-        &__info {
-            max-width: 160px;
-            margin: 0 0 0 20px;
         }
 
         &__img-first {
