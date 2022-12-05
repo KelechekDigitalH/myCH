@@ -1413,7 +1413,7 @@
 
         &__number {
             position: absolute;
-            left: 15px;
+            left: 150px;
             bottom: 0;
         }
 
@@ -1670,6 +1670,10 @@
     }
 
     .photos {
+
+        &__number {
+            left: 120px;
+        }
 
         &__inner {
             padding: 100px 0 0 0;
@@ -1931,6 +1935,8 @@
 
         &__number {
             font-size: 14px;
+            left: 100px;
+            bottom: 20px;
         }
 
         &__name {
@@ -2081,7 +2087,8 @@
         }
 
         &__number {
-            left: 160px;
+            left: 100px;
+            bottom: 40px;
         }
 
         &__buttons {
@@ -2121,6 +2128,11 @@
         &__buttons {
             margin-top: 50px;
         }
+
+        &__number {
+            left: 90px;
+            bottom: 60px;
+        }
     }
 }
 
@@ -2138,6 +2150,11 @@
         &__buttons {
             margin-top: 70px;
         }
+
+        &__number {
+            left: 90px;
+            bottom: 85px;
+        }
     }
 }
 
@@ -2154,6 +2171,11 @@
 
         &__buttons {
             margin-top: 70px;
+        }
+
+        &__number {
+            left: 80px;
+            bottom: 105px;
         }
     }
 }
