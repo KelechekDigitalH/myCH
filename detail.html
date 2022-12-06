@@ -18,10 +18,8 @@
                 </a>
                 
                 <nav class="menu">
-
-                    <label for="drop" class="toggle"><span>&#9776;</span></label>
-                    <input type="checkbox" id="drop" />
-                    
+                    <input type="checkbox" class="toggle-menu">
+                    <div class="hamburger"></div>
                     <ul class="nav nav-menu">
                         <li class="nav-item active">
                             <a class="nav-link active" href="./blog.html">BLOG</a>
@@ -49,16 +47,26 @@
             <section class="video">
                 <div class="video__inner">
                     <div class="video__player">
-                         <div class="poster">
+                        <div class="poster"> 
                              <img src="./assets/images/detail_poster.jpg" alt=""> 
                         </div> 
                         <div class="video__button"></div>
-                        <!-- <video src="#"></video>  -->
-                    </div>
+                            <video controls loop preload="auto">
+                                <source src="./assets/video/BeART_Video.webm" type='video/webm; codecs="vp8.0, vorbis"'>
+                                <source src="./assets/video/BeART_Video.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+                                <p>Sorry, but your browser does not support this video format.</p>
+                            </video>
+                            <button class="close-btn"><span></span>close</button> 
+                        </div>
                     <div class="video__descr">
                         <h3>DIE GEHEIMAGENTIN – ZUM ZUSAMMENHANG VON KULTURELLER IDENTITÄT</h3>
-                        <div class="audio-button">
-                            <a href="#">BEITRAG ANHÖREN</a>
+                        <div class="audio-block">
+                            <button>BEITRAG ANHÖREN</button>
+                            <audio controls preload="auto">
+                                <source src="./assets/audio/AUDIO_MP3.mp3" type="audio/mpeg">
+                                <source src="./assets/audio/AUDIO_OGG.ogg" type="audio/ogg; codecs=opus">
+                                <source src="./assets/audio/AUDIO_OGG.ogg" type="audio/ogg; codecs=vorbis">
+                            </audio>
                         </div>
                     </div>
                 </div>
@@ -231,22 +239,22 @@
                             </form>    
                         </div>
                     </div>
-                    <div class="photos__third-block">
-                        <div class="photos__img-text-first">
-                            <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg" alt="">
-                            <h5 class="photos__text-first">Hier könnte eine Bildlegende stehen.</h5>
-                        </div>
-    
-                        <div class="photos__img-text-second">
-                            <img src="https://www.timeoutdubai.com/cloud/timeoutdubai/2022/02/14/How-to-take-great-photos-of%E2%80%A6the-desert-1024x768.jpg" alt="">
-                            <h5 class="photos__text-second">Hier könnte eine Bildlegende stehen.</h5>
-                        </div>
+                </div>  
+                <div class="photos__third-block">
+                    <div class="photos__img-text-first">
+                        <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg" alt="">
+                        <h5 class="photos__text-first">Hier könnte eine Bildlegende stehen.</h5>
                     </div>
-                    <div class="photos__foutrth-block">
-                        <div class="photos__img-text-fourth">
-                            <img src="https://www.bhg.com/thmb/z5-sV9SEXRHcAftjOY33eY-4zaI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/friends-laughing-by-the-river-95cd8f6921674f55bc22e34975887deb.jpg" alt="">
-                            <h5 class="photos__text-fourth">Hier könnte eine Bildlegende stehen.</h5>
-                        </div>
+
+                    <div class="photos__img-text-second">
+                        <img src="https://www.timeoutdubai.com/cloud/timeoutdubai/2022/02/14/How-to-take-great-photos-of%E2%80%A6the-desert-1024x768.jpg" alt="">
+                        <h5 class="photos__text-second">Hier könnte eine Bildlegende stehen.</h5>
+                </div>
+                </div>
+                <div class="photos__foutrth-block">
+                    <div class="photos__img-text-fourth">
+                        <img src="https://www.bhg.com/thmb/z5-sV9SEXRHcAftjOY33eY-4zaI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/friends-laughing-by-the-river-95cd8f6921674f55bc22e34975887deb.jpg" alt="">
+                        <h5 class="photos__text-fourth">Hier könnte eine Bildlegende stehen.</h5>
                     </div>
                 </div>
             </section>
@@ -332,5 +340,6 @@
             </div>
         </div>  
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
