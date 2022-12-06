@@ -1837,7 +1837,8 @@
         }
 
         &__number {
-            left: 160px;
+            left: 131px;
+            top: 316px;
         }
 
         &__buttons {
@@ -1935,8 +1936,8 @@
 
         &__number {
             font-size: 14px;
-            left: 100px;
-            bottom: 20px;
+            left: 107px;
+            top: 248px;
         }
 
         &__name {
@@ -2158,6 +2159,16 @@
     }
 }
 
+@media screen and (max-width: 470.98px) {
+    .photos {
+
+        &__number {
+            left: 87px;
+            bottom: 108px;
+        }
+    }
+}
+
 @media screen and (max-width: 455.98px) {
     .photos {
 
@@ -2309,6 +2320,8 @@
 
         &__number {
             font-size: 14px;
+            left: 70px;
+            top: 205px;
         }
 
         &__name {
