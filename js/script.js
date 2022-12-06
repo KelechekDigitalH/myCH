@@ -41,6 +41,19 @@ function audioPlay() {
   audio.play();
 }
 
+
+// Swiper
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 // filtre - veranstaltunge
 $("document").ready(function () {
   $("#filterTable").dataTable({

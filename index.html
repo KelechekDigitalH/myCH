@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="icon" href="assets/images/favicon.png">
     <link rel="stylesheet" href="css/styles.min.css">
     <title>myCH - Home Page</title>
@@ -198,21 +199,39 @@
                     </div>
                     </div>
 
-                    <div class="photos__second-block">
-                        <div class="photos__user-feedback">
-                            <p class="photos__user-text">Testimonial bezeichnet in der Werbung im Englischen die konkrete Fürsprache für ein Produkt, eine Dienstleistung, eine Idee oder Institution durch eine Person, die der Zielgruppe meist bekannt ist und mit ihrem Auftritt die Glaubwürdigkeit der Werbebotschaft erhöht.</p>
-                            <h5 class="photos__name">Vorname Name</h5>
-
-                            <div class="photos__buttons">
-                                <button class="photos__button-left">←</button>
-                                <button class="photos__button-right">→</button>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="photos__second-block">
+                                    <div class="photos__user-feedback">
+                                        <p class="photos__user-text">Testimonial bezeichnet in der Werbung im Englischen die konkrete Fürsprache für ein Produkt, eine Dienstleistung, eine Idee oder Institution durch eine Person, die der Zielgruppe meist bekannt ist und mit ihrem Auftritt die Glaubwürdigkeit der Werbebotschaft erhöht.</p>
+                                        <h5 class="photos__name">Vorname Name</h5>
+                                    </div>
+            
+                                    <div class="photos__img-second">
+                                        <img src="https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGhvdG98ZW58MHx8MHx8&w=1000&q=80" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="photos__second-block">
+                                    <div class="photos__user-feedback">
+                                        <p class="photos__user-text">Testimonial bezeichnet in der Werbung im Englischen die konkrete Fürsprache für ein Produkt, eine Dienstleistung, eine Idee oder Institution durch eine Person, die der Zielgruppe meist bekannt ist und mit ihrem Auftritt die Glaubwürdigkeit der Werbebotschaft erhöht.</p>
+                                        <h5 class="photos__name">Vorname Name</h5>
+                                    </div>
+            
+                                    <div class="photos__img-second">
+                                        <img src="https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGhvdG98ZW58MHx8MHx8&w=1000&q=80" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="photos__img-second">
-                            <img src="https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGhvdG98ZW58MHx8MHx8&w=1000&q=80" alt="">
-                            <span class="photos__number">01 / 04</span>
+                        <div class="photos__buttons">
+                            <div class="photos__button-left swiper-button-next">→</div>
+                            <div class="photos__button-right swiper-button-prev">←</div>
                         </div>
+                        <div class="photos__number swiper-pagination"></div>
                     </div>
 
                     <div class="photos__third-block">
@@ -314,6 +333,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
