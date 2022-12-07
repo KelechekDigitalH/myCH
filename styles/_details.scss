@@ -1134,6 +1134,7 @@ ul {
         }
     }
     .box-container {
+        display: none;
         padding-bottom: 50px;
 
         &__inner {
@@ -1162,7 +1163,10 @@ ul {
         }
     }
 
+  
+
     .response-box {
+        display: none;
         &__inner {
             padding: 23px 25px;
             background-color: $color-light-blue;
@@ -1173,6 +1177,12 @@ ul {
             background-color: rgba(255, 255, 255, 0.23);
         }
     }
+    
+    .box-container.active,
+    .response-box.active {
+        display: block;
+    }
+    
 }
 
 @media (max-width: 1440px) {
