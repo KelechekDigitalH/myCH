@@ -1,4 +1,4 @@
-// video -details
+// video 
 const videoPlayBtn = document.querySelector(".video__button"),
   poster = document.querySelector(".poster"),
   video = document.querySelector("video"),
@@ -35,11 +35,51 @@ function closeVideoScreen() {
   video.pause();
 }
 
+//audio
+
 function audioPlay() {
   audio.classList.add("active");
   audioBtn.classList.add("unvisible");
   audio.play();
 }
 
+
+//comment
+
+const formTextarea = document.querySelector('.comment-form textarea'),
+      cancelBtn = document.querySelectorAll('.btn-box button'),
+      formSendBTN = document.querySelector('.comment-form input'),
+      replyCommentBox = document.querySelector('.box-container'),
+      commentBoxParagrath = replyCommentBox.querySelector('p'),
+      replyCommentBtn = replyCommentBox.querySelector('.box-container__btn'),
+      responseBox = document.querySelector('.response-box'),
+      responseBoxParagrath = responseBox.querySelector('p');
+
+
+
+cancelBtn.forEach(btn => {
+
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelectorAll('textarea').forEach(item => {
+      item.value = "";
+    });
+  });
+
+});
+
+
+formSendBTN.addEventListener('click', (e) => {
+  e.preventDefault();
+  commentBoxParagrath.innerHTML = formTextarea.value;
+  formTextarea.value = "";
+  replyCommentBox.classList.add('active');
+});
+
+replyCommentBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  responseBox.classList.add('active');
+  responseBoxParagrath.innerHTML = commentBoxParagrath.textContent;
+});
 
 
